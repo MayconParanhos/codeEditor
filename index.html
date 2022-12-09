@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>JavaScript Demo: Array.filter()</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/codemirror.css">
+  <link href="/editor-js.css" rel="stylesheet" />
+  <style>
+    body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+    .container {
+        width: 90vw;
+        height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <section id="static">
+    <pre><code id="static-js" data-height="taller"></code></pre>
+  </section>
+
+  <section id="live" class="live hidden">
+    <header class="output-header full-border">
+      <h4 class="output-heading">Wright and execute your JavaScript code.</h4>
+    </header>
+    <div id="editor" class="editor"></div>
+
+    <div class="output-container">
+      <div class="buttons-container">
+        <button id="execute" class="button run" type="button">Run &rsaquo;</button>
+        <button id="reset" type="button" class="button">Reset</button>
+      </div>
+      <div id="console" class="output"><code></code></div>
+    </div>
+  </section>
+</div>
+  <script src="mode/javascript/javascript.js"></script>
+  <script src="lib/codemirror.js"></script>
+  <script src="/editor-js.js"></script>
+</body>
+</html>
